@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InAmigos Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div id="topbar">
+  <div class="topbar-left">
+    <a href="mailto:inamigosfoundation@gmail.com">✉ inamigosfoundation@gmail.com</a>
+    <a href="tel:+916267309902">📞 +91 626 730 9902</a>
+  </div>
+  <div class="topbar-right">
+    <a href="https://www.facebook.com/inamigos.inamigos" target="_blank" title="Facebook">𝗙</a>
+    <a href="https://www.instagram.com/inamigos/" target="_blank" title="Instagram">📷</a>
+    <a href="https://twitter.com" target="_blank" title="Twitter">🐦</a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <img src="https://inamigosfoundation.org.in/public/storage/settings/174421468011.jpg" alt="InAmigos Foundation" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span style="display:none;font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;color:var(--green);">InAmigos Foundation</span>
+  </div>
+  <div class="nav-links">
+    <button class="nav-btn active" onclick="goTo('hero-wrap')">Home</button>
+    <button class="nav-btn" onclick="goTo('causes')">Causes</button>
+    <button class="nav-btn" onclick="goTo('about-section')">About Us</button>
+    <button class="nav-btn" onclick="goTo('volunteers')">Volunteers</button>
+    <button class="nav-btn" onclick="goTo('gallery')">Gallery</button>
+    <button class="nav-btn" onclick="goTo('blog')">Blog</button>
+    <button class="nav-btn" onclick="goTo('events')">Events</button>
+    <button class="nav-btn" onclick="goTo('contact')">Contact</button>
+    <a href="https://rzp.io/l/kWQ87HP" target="_blank" class="nav-donate">💛 Donate</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div id="hero-wrap" style="margin-top:calc(var(--nav-h) + 36px);"><!-- anchor offset --></div>
+<section id="hero">
+  <div class="hero-slides" id="heroSlides">
+    <!-- Slide 1 – BachpanShala -->
+    <div class="hero-slide">
+      <img src="https://inamigosfoundation.org.in/public/storage/post/1738237659.jpeg" alt="BachpanShala – Education for Children" onerror="this.src='https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=1400&q=80'">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-tag">Project BachpanShala</span>
+        <h1 class="hero-title">Nurturing Young Minds,<br>Building Bright Futures</h1>
+        <p class="hero-sub">Quality education for underprivileged children — bridging gaps in digital literacy, life skills, and school support across India.</p>
+        <div class="hero-btns">
+          <a href="https://rzp.io/l/kWQ87HP" class="hero-btn-primary" target="_blank">💛 Donate Now</a>
+          <button class="hero-btn-secondary" onclick="goTo('causes')">Explore Projects →</button>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 2 – Udaan -->
+    <div class="hero-slide">
+      <img src="https://inamigosfoundation.org.in/public/storage/post/1738237839.jpeg" alt="Project Udaan – Women Empowerment" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1400&q=80'">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-tag">Project Udaan</span>
+        <h1 class="hero-title">Soaring Towards<br>a Brighter Future</h1>
+        <p class="hero-sub">Empowering women through skill development, financial independence, and opportunities to become self-reliant across India.</p>
+        <div class="hero-btns">
+          <a href="https://forms.gle/AB4c1hLaDDmtrKGU7" class="hero-btn-primary" target="_blank">🌱 Become a Volunteer</a>
+          <button class="hero-btn-secondary" onclick="goTo('about-section')">Our Story →</button>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 3 – Prakriti -->
+    <div class="hero-slide">
+      <img src="https://inamigosfoundation.org.in/public/storage/post/1738237744.jpg" alt="Project Prakriti – Environment" onerror="this.src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1400&q=80'">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-tag">Project Prakriti</span>
+        <h1 class="hero-title">Plant for a<br>Better Tomorrow</h1>
+        <p class="hero-sub">Environmental conservation through tree plantation drives, awareness campaigns, and promoting sustainable practices in local communities.</p>
+        <div class="hero-btns">
+          <a href="https://inamigosfoundation.org.in/became-volunteer" class="hero-btn-primary" target="_blank">💚 Join Us</a>
+          <button class="hero-btn-secondary" onclick="goTo('gallery')">See Gallery →</button>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 4 – Seva -->
+    <div class="hero-slide">
+      <img src="https://inamigosfoundation.org.in/public/storage/post/1738237675.jpg" alt="Project Seva – Food Distribution" onerror="this.src='https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1400&q=80'">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-tag">Project Seva</span>
+        <h1 class="hero-title">Serving Humanity<br>with Compassion</h1>
+        <p class="hero-sub">Over 50,000+ meals and clothing distributed to the underprivileged — because every person deserves dignity and care.</p>
+        <div class="hero-btns">
+          <a href="https://rzp.io/l/kWQ87HP" class="hero-btn-primary" target="_blank">💛 Donate Now</a>
+          <button class="hero-btn-secondary" onclick="goTo('get-involved')">Get Involved →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="hero-prev" onclick="changeSlide(-1)">&#8249;</button>
+  <button class="hero-next" onclick="changeSlide(1)">&#8250;</button>
+  <div class="hero-dots" id="heroDots">
+    <button class="hero-dot active" onclick="goSlide(0)"></button>
+    <button class="hero-dot" onclick="goSlide(1)"></button>
+    <button class="hero-dot" onclick="goSlide(2)"></button>
+    <button class="hero-dot" onclick="goSlide(3)"></button>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div id="stats-bar">
+  <div class="stat-item"><div class="stat-num">200+</div><div class="stat-lbl">Volunteers</div></div>
+  <div class="stat-item"><div class="stat-num">28</div><div class="stat-lbl">States Covered</div></div>
+  <div class="stat-item"><div class="stat-num">6</div><div class="stat-lbl">Active Projects</div></div>
+  <div class="stat-item"><div class="stat-num">50,000+</div><div class="stat-lbl">Beneficiaries</div></div>
+  <div class="stat-item"><div class="stat-num">2020</div><div class="stat-lbl">Founded</div></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about-section" class="section" style="background:var(--white);">
+  <div class="section-inner">
+    <div class="about-grid reveal">
+      <div>
+        <span class="section-eyebrow">Get to Know Us</span>
+        <h2 class="section-title">We Are <span>InAmigos</span> Foundation</h2>
+        <div class="divider"></div>
+        <p style="font-size:1rem;color:var(--text-muted);line-height:1.82;margin-bottom:16px;">InAmigos Foundation was founded on <strong>September 23, 2020</strong>, by <strong>Mr. Govind Shukla (Founder &amp; CEO)</strong>. It is a Section 8 registered non-profit organization, licensed by the Central Government, with its base in Chhattisgarh.</p>
+        <p style="font-size:1rem;color:var(--text-muted);line-height:1.82;margin-bottom:22px;">We believe in the power of collective action. Every contribution is directed towards food distribution, education, women empowerment, animal welfare, environmental sustainability and social inclusion programs across India.</p>
+        <div class="about-badges">
+          <div class="badge">✅ Section 8 Registered</div>
+          <div class="badge">✅ 80G &amp; 12A Certified</div>
+          <div class="badge">✅ CSR-1 Registered</div>
+          <div class="badge">✅ NITI Aayog Registered</div>
+          <div class="badge">✅ IAF ISO 9001:2015</div>
+        </div>
+        <a href="https://inamigosfoundation.org.in/page/About-Us" target="_blank" class="view-all mt-28">Learn More About Us →</a>
+      </div>
+      <div class="about-img">
+        <img src="https://inamigosfoundation.org.in/public/storage/post/1740818641.jpg" alt="InAmigos Foundation Work" onerror="this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&q=80'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- CAUSES -->
+<section id="causes" class="section" style="background:var(--green-pale2);">
+  <div class="section-inner">
+    <div class="reveal text-center">
+      <span class="section-eyebrow">Our Projects</span>
+      <h2 class="section-title" style="margin:0 auto;">Our <span>Causes</span> &amp; Initiatives</h2>
+      <div class="divider" style="margin:14px auto 0;"></div>
+    </div>
+    <div class="causes-grid reveal">
+      <!-- Project Seva -->
+      <div class="cause-card">
+        <img class="cause-img" src="https://inamigosfoundation.org.in/public/storage/post/1738237675.jpg" alt="Project Seva" onerror="this.src='https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&q=80'">
+        <div class="cause-body">
+          <div class="cause-icon">🍱</div>
+          <div class="cause-title">Project Seva</div>
+          <p class="cause-desc">Providing food and clothing to the underprivileged. Over 50,000+ meals distributed to those in need across India with compassion and dignity.</p>
+          <div class="cause-progress mt-16">
+            <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-bottom:6px;"><span>Progress</span><span>78%</span></div>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:78%"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- BachpanShala -->
+      <div class="cause-card">
+        <img class="cause-img" src="https://inamigosfoundation.org.in/public/storage/post/1738237659.jpeg" alt="BachpanShala" onerror="this.src='https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=600&q=80'">
+        <div class="cause-body">
+          <div class="cause-icon">📚</div>
+          <div class="cause-title">Project BachpanShala</div>
+          <p class="cause-desc">Ensuring quality education for underprivileged children — bridging gaps in digital literacy, life skills and school education support.</p>
+          <div class="cause-progress mt-16">
+            <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-bottom:6px;"><span>Progress</span><span>65%</span></div>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Jeev -->
+      <div class="cause-card">
+        <img class="cause-img" src="https://inamigosfoundation.org.in/public/storage/post/1738237826.jpg" alt="Project Jeev" onerror="this.src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80'">
+        <div class="cause-body">
+          <div class="cause-icon">🐾</div>
+          <div class="cause-title">Project Jeev</div>
+          <p class="cause-desc">Animal welfare through rescue, protection and feeding. Dedicated to helping stray animals through shelters and compassionate feeding programs.</p>
+          <div class="cause-progress mt-16">
+            <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-bottom:6px;"><span>Progress</span><span>55%</span></div>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:55%"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Udaan -->
+      <div class="cause-card">
+        <img class="cause-img" src="https://inamigosfoundation.org.in/public/storage/post/1738237839.jpeg" alt="Project Udaan" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80'">
+        <div class="cause-body">
+          <div class="cause-icon">🦋</div>
+          <div class="cause-title">Project Udaan</div>
+          <p class="cause-desc">Women empowerment through skill development, financial independence and awareness programs to enable women to become self-reliant.</p>
+          <div class="cause-progress mt-16">
+            <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-bottom:6px;"><span>Progress</span><span>70%</span></div>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Prakriti -->
+      <div class="cause-card">
+        <img class="cause-img" src="https://inamigosfoundation.org.in/public/storage/post/1738237744.jpg" alt="Project Prakriti" onerror="this.src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80'">
+        <div class="cause-body">
+          <div class="cause-icon">🌿</div>
+          <div class="cause-title">Project Prakriti</div>
+          <p class="cause-desc">Environmental conservation through tree plantation drives, sustainability campaigns and involving local communities in protecting nature.</p>
+          <div class="cause-progress mt-16">
+            <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-bottom:6px;"><span>Progress</span><span>60%</span></div>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:60%"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Vikas -->
+      <div class="cause-card">
+        <img class="cause-img" src="https://inamigosfoundation.org.in/public/storage/post/1740818641.jpg" alt="Project Vikas" onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80'">
+        <div class="cause-body">
+          <div class="cause-icon">🚀</div>
+          <div class="cause-title">Project Vikas</div>
+          <p class="cause-desc">Enhancing employability through skill development programs and internships — transforming careers, one opportunity at a time for 4+ years.</p>
+          <div class="cause-progress mt-16">
+            <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-bottom:6px;"><span>Progress</span><span>82%</span></div>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:82%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="https://inamigosfoundation.org.in/causes" target="_blank" class="view-all">View All Causes →</a>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- GET INVOLVED -->
+<section id="get-involved">
+  <div class="gi-inner">
+    <div class="gi-top reveal">
+      <div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:8px;">Take Action</div>
+        <div class="gi-heading">Be Part of the Change</div>
+        <div class="gi-sub">Every act of kindness plants a seed. Join us to create a more inclusive, compassionate and empowered society.</div>
+      </div>
+      <div class="gi-arrows">
+        <button class="gi-arrow" onclick="slideGi(-1)">&#8249;</button>
+        <button class="gi-arrow" onclick="slideGi(1)">&#8250;</button>
+      </div>
+    </div>
+    <div class="gi-track-wrap">
+      <div class="gi-cards" id="giCards">
+        <div class="gi-card">
+          <span class="gi-icon">💛</span>
+          <div class="gi-title">Donate Us</div>
+          <p class="gi-desc">Your contribution is directly pooled towards food and water, education and social inclusion initiatives. Every rupee makes a real difference in someone's life.</p>
+          <a href="https://rzp.io/l/kWQ87HP" target="_blank" class="gi-btn gi-btn-gold">Donate Now</a>
+        </div>
+        <div class="gi-card">
+          <span class="gi-icon">🌱</span>
+          <div class="gi-title">Become a Volunteer</div>
+          <p class="gi-desc">Join our network of 200+ dedicated professionals and volunteers. Share your skills, time and passion to bring positive change in society.</p>
+          <a href="https://forms.gle/AB4c1hLaDDmtrKGU7" target="_blank" class="gi-btn gi-btn-green">Apply Now</a>
+        </div>
+        <div class="gi-card">
+          <span class="gi-icon">💚</span>
+          <div class="gi-title">Join Us</div>
+          <p class="gi-desc">Step in, stand out, and create impact. Become a member of the InAmigos family and be part of our mission to uplift communities across 28 states.</p>
+          <a href="https://inamigosfoundation.org.in/became-volunteer" target="_blank" class="gi-btn gi-btn-white">Join Today</a>
+        </div>
+      </div>
+    </div>
+    <div class="gi-dots">
+      <button class="gi-dot active" onclick="goGi(0)"></button>
+      <button class="gi-dot" onclick="goGi(1)"></button>
+      <button class="gi-dot" onclick="goGi(2)"></button>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- VOLUNTEERS -->
+<section id="volunteers" class="section" style="background:var(--white);">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-eyebrow">Our Team</span>
+      <h2 class="section-title">Meet Our <span>Volunteers</span></h2>
+      <div class="divider"></div>
+      <p class="section-lead">Our volunteers are the heartbeat of InAmigos Foundation — dedicated professionals who work tirelessly to bring positive change in society.</p>
+    </div>
+    <div class="vol-grid reveal">
+      <div class="vol-card">
+        <div class="vol-avatar">👤</div>
+        <div class="vol-name">Faiz Khan</div>
+        <div class="vol-role">Volunteer Supervisor</div>
+        <div class="vol-loc">📍 Uttar Pradesh</div>
+      </div>
+      <div class="vol-card">
+        <div class="vol-avatar">👤</div>
+        <div class="vol-name">Manavi Jaiswal</div>
+        <div class="vol-role">Junior Volunteer Associate</div>
+        <div class="vol-loc">📍 India</div>
+      </div>
+      <div class="vol-card">
+        <div class="vol-avatar">👤</div>
+        <div class="vol-name">Akash</div>
+        <div class="vol-role">Volunteer Associate</div>
+        <div class="vol-loc">📍 India</div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="https://inamigosfoundation.org.in/volunteers" target="_blank" class="view-all view-all-outline">View All Volunteers →</a>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- GALLERY -->
+<section id="gallery" class="section" style="background:var(--green-pale2);">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-eyebrow">Our Gallery</span>
+      <h2 class="section-title">Moments of <span>Impact</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="https://inamigosfoundation.org.in/public/storage/gallery/1743051485.jpg" alt="Gallery 1" onerror="this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&q=80'">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://inamigosfoundation.org.in/public/storage/gallery/1743051466.jpg" alt="Gallery 2" onerror="this.src='https://images.unsplash.com/photo-1593113598332-cd288d649433?w=500&q=80'">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://inamigosfoundation.org.in/public/storage/gallery/1743051449.jpg" alt="Gallery 3" onerror="this.src='https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=500&q=80'">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://inamigosfoundation.org.in/public/storage/gallery/1743051438.jpg" alt="Gallery 4" onerror="this.src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80'">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://inamigosfoundation.org.in/public/storage/events/1738238109.jpg" alt="World Water Day" onerror="this.src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=500&q=80'">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://inamigosfoundation.org.in/public/storage/events/1738135259.jpeg" alt="Happiness Day" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80'">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://inamigosfoundation.org.in/public/storage/post/1738237826.jpg" alt="Project Jeev" onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80'">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="https://inamigosfoundation.org.in/gallery" target="_blank" class="view-all">View Full Gallery →</a>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- BLOG -->
+<section id="blog" class="section" style="background:var(--white);">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-eyebrow">Blog &amp; Stories</span>
+      <h2 class="section-title">Latest from the <span>Field</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="blog-grid reveal">
+      <div class="blog-card">
+        <div class="blog-thumb"><img src="https://inamigosfoundation.org.in/public/storage/post/1740818641.jpg" alt="Project Vikas" onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80'"></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>01 Mar 2025</span><span>•</span><span>Project Vikas</span></div>
+          <div class="blog-title">Project Vikas: Transforming Careers, One Internship at a Time</div>
+          <p class="blog-excerpt">For four years, InAmigos Foundation has been committed to empowering young minds through Project Vikas, an internship and skill development initiative...</p>
+          <a href="https://inamigosfoundation.org.in/single/Project-Vikas-Transforming-Careers-One-Internship-at-a-Time" class="blog-read" target="_blank">Read More →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb"><img src="https://inamigosfoundation.org.in/public/storage/post/1738237839.jpeg" alt="Project Udaan" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80'"></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>30 Jan 2025</span><span>•</span><span>Women Empowerment</span></div>
+          <div class="blog-title">Udaan: Where Women Rise, Dreams Soar, and Change Begins</div>
+          <p class="blog-excerpt">Project Udaan is an empowerment initiative transforming the lives of women across India by providing skills, resources, and opportunities...</p>
+          <a href="https://inamigosfoundation.org.in/single/udaan-women-rise-dreams-soar-change-begins" class="blog-read" target="_blank">Read More →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb"><img src="https://inamigosfoundation.org.in/public/storage/post/1738237659.jpeg" alt="BachpanShala" onerror="this.src='https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=500&q=80'"></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>30 Jan 2025</span><span>•</span><span>Education</span></div>
+          <div class="blog-title">BachpanShala: Shaping Dreams, Building Futures with InAmigos Foundation</div>
+          <p class="blog-excerpt">Discover how BachpanShala is transforming the lives of underprivileged children by providing them quality education and essential life skills...</p>
+          <a href="https://inamigosfoundation.org.in/single/bachpanshala-shaping-dreams-with-inamigos" class="blog-read" target="_blank">Read More →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb"><img src="https://inamigosfoundation.org.in/public/storage/post/1738237965.jpg" alt="Save Water" onerror="this.src='https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=500&q=80'"></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>30 Jan 2025</span><span>•</span><span>Environment</span></div>
+          <div class="blog-title">Save Water, Save Life: A Call to Action by InAmigos Foundation</div>
+          <p class="blog-excerpt">Water is life. Despite covering 70% of Earth's surface, less than 1% is accessible and safe for human consumption. Here's what we're doing about it...</p>
+          <a href="https://inamigosfoundation.org.in/single/save-water-save-life" class="blog-read" target="_blank">Read More →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb"><img src="https://inamigosfoundation.org.in/public/storage/post/1738237826.jpg" alt="Project Jeev" onerror="this.src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=500&q=80'"></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>30 Jan 2025</span><span>•</span><span>Animal Welfare</span></div>
+          <div class="blog-title">Project Jeev – In This Life, Save a Life</div>
+          <p class="blog-excerpt">Project Jeev is a compassionate initiative dedicated to helping stray animals through shelters, feeding programs, and emergency rescue...</p>
+          <a href="https://inamigosfoundation.org.in/single/project-jeev-in-this-life-save-a-life" class="blog-read" target="_blank">Read More →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb"><img src="https://inamigosfoundation.org.in/public/storage/post/1738237948.jpeg" alt="Mission Life" onerror="this.src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80'"></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>30 Jan 2025</span><span>•</span><span>Sustainability</span></div>
+          <div class="blog-title">Mission Life: Great Vision of InAmigos Foundation for a Sustainable Future</div>
+          <p class="blog-excerpt">Mission Life (Lifestyle For Environment) is an initiative to promote sustainable living and combat climate change initiated by the Prime Minister...</p>
+          <a href="https://inamigosfoundation.org.in/single/mission-life-sustainable-future-inamigos-foundation" class="blog-read" target="_blank">Read More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="https://inamigosfoundation.org.in/blog" target="_blank" class="view-all">View All Posts →</a>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- EVENTS -->
+<section id="events" class="section" style="background:var(--green-pale2);">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-eyebrow">Events</span>
+      <h2 class="section-title">Our <span>Events</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="events-grid reveal">
+      <div class="event-card">
+        <div class="event-img-wrap"><img src="https://inamigosfoundation.org.in/public/storage/events/1738238109.jpg" alt="World Water Day" onerror="this.src='https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=300&q=80'"></div>
+        <div class="event-body">
+          <div class="event-cat">Community</div>
+          <div class="event-date-badge">📅 22 March 2025</div>
+          <div class="event-title">World Water Day 2025</div>
+          <p class="event-desc">This event highlights the importance of water conservation and collective action to ensure clean water for all.</p>
+          <a href="https://inamigosfoundation.org.in/event/world-water-day-2025" target="_blank" style="font-size:.83rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:10px;display:inline-block;">Read More →</a>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-img-wrap"><img src="https://inamigosfoundation.org.in/public/storage/events/1738135259.jpeg" alt="Day of Happiness" onerror="this.src='https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=300&q=80'"></div>
+        <div class="event-body">
+          <div class="event-cat">Community</div>
+          <div class="event-date-badge">📅 20 March 2025</div>
+          <div class="event-title">International Day of Happiness 2025</div>
+          <p class="event-desc">Spreading joy, positivity, and well-being through engaging activities and inspiring discussions for all.</p>
+          <a href="https://inamigosfoundation.org.in/event/international-day-of-happiness-2025" target="_blank" style="font-size:.83rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:10px;display:inline-block;">Read More →</a>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-img-wrap"><img src="https://inamigosfoundation.org.in/public/storage/events/1738134836.jpeg" alt="Women in Science" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80'"></div>
+        <div class="event-body">
+          <div class="event-cat">Education</div>
+          <div class="event-date-badge">📅 11 February 2025</div>
+          <div class="event-title">International Day of Women &amp; Girls in Science 2025</div>
+          <p class="event-desc">Celebrating women and girls in science — inspiring the next generation of female scientists and changemakers.</p>
+          <a href="https://inamigosfoundation.org.in/event/international-day-women-girls-science-2025" target="_blank" style="font-size:.83rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:10px;display:inline-block;">Read More →</a>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-img-wrap" style="background:var(--green-pale);display:flex;align-items:center;justify-content:center;font-size:3rem;">🌿</div>
+        <div class="event-body">
+          <div class="event-cat">Environment</div>
+          <div class="event-date-badge">📅 Upcoming 2025</div>
+          <div class="event-title">Tree Plantation Drive – Project Prakriti</div>
+          <p class="event-desc">Join us in planting trees and promoting environmental sustainability across communities in Chhattisgarh and beyond.</p>
+          <a href="https://inamigosfoundation.org.in/events" target="_blank" style="font-size:.83rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:10px;display:inline-block;">View All Events →</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="https://inamigosfoundation.org.in/events" target="_blank" class="view-all">View All Events →</a>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- CONTACT -->
+<section id="contact" class="section" style="background:var(--white);">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-eyebrow">Contact Us</span>
+      <h2 class="section-title">Get in <span>Touch</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="contact-wrap reveal">
+      <div>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-text">
+              <h4>Our Address</h4>
+              <p>Ward No. 5, Gram Post, Sipat Ujwal Nagar,<br>Bilaspur, Chhattisgarh – 495555</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div class="contact-info-text">
+              <h4>Email Us</h4>
+              <p><a href="mailto:inamigosfoundation@gmail.com" style="color:var(--green);text-decoration:none;">inamigosfoundation@gmail.com</a><br><a href="mailto:support@inamigosfoundation.org.in" style="color:var(--green);text-decoration:none;">support@inamigosfoundation.org.in</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div class="contact-info-text">
+              <h4>Call Us</h4>
+              <p><a href="tel:+916267309902" style="color:var(--green);text-decoration:none;">+91 626 730 9902</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🕐</div>
+            <div class="contact-info-text">
+              <h4>Working Hours</h4>
+              <p>Monday – Saturday: 9:00 AM – 6:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://maps.google.com/maps?q=Sipat+Ujwal+Nagar+Bilaspur+Chhattisgarh&z=13&output=embed" width="100%" height="200" style="border:0;display:block;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email Address">
+          </div>
+          <input type="text" placeholder="Subject">
+          <textarea rows="5" placeholder="Your Message..."></textarea>
+          <button type="button">Send Message ✉️</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://inamigosfoundation.org.in/public/storage/settings/1744214680113.jpg" alt="InAmigos Foundation" onerror="this.style.display='none'">
+        </div>
+        <p class="footer-about">InAmigos Foundation is a Section 8 registered non-profit committed to creating lasting social impact through education, women empowerment, animal welfare, environmental conservation and community development across India.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/inamigos.inamigos" target="_blank" title="Facebook">𝗙</a>
+          <a href="https://www.instagram.com/inamigos/" target="_blank" title="Instagram">📷</a>
+          <a href="https://twitter.com" target="_blank" title="Twitter">🐦</a>
+          <a href="https://in.linkedin.com/company/inamigos-foundation" target="_blank" title="LinkedIn">💼</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#" onclick="goTo('hero-wrap')">→ Home</a></li>
+          <li><a href="#" onclick="goTo('causes')">→ Our Causes</a></li>
+          <li><a href="#" onclick="goTo('about-section')">→ About Us</a></li>
+          <li><a href="#" onclick="goTo('volunteers')">→ Volunteers</a></li>
+          <li><a href="#" onclick="goTo('gallery')">→ Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#" onclick="goTo('blog')">→ Blog</a></li>
+          <li><a href="#" onclick="goTo('events')">→ Events</a></li>
+          <li><a href="#" onclick="goTo('contact')">→ Contact</a></li>
+          <li><a href="https://rzp.io/l/kWQ87HP" target="_blank">→ Donate Now</a></li>
+          <li><a href="https://forms.gle/AB4c1hLaDDmtrKGU7" target="_blank">→ Become a Volunteer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Certifications</h4>
+        <ul>
+          <li><a href="#">✅ Section 8 Company</a></li>
+          <li><a href="#">✅ 80G &amp; 12A Certified</a></li>
+          <li><a href="#">✅ CSR-1 Registered</a></li>
+          <li><a href="#">✅ NITI Aayog Registered</a></li>
+          <li><a href="#">✅ IAF ISO 9001:2015</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 InAmigos Foundation. All Rights Reserved.</span>
+      <span>Founded by <strong style="color:rgba(255,255,255,.7)">Mr. Govind Shukla</strong> · Bilaspur, Chhattisgarh</span>
+    </div>
+  </div>
+</footer>
+<script src="task1.js"></script>
+</body>
+</html>
